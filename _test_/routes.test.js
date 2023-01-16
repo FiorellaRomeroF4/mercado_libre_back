@@ -3,7 +3,7 @@ const app = require("../app");
 
 describe("GET /items", () => {
   test("should return 200 OK", async () => {
-    await supertest(app).get("/api/items?search=iphone").expect(200);
+    await supertest(app).get("/api/items?q=iphone").expect(200);
   });
 });
 

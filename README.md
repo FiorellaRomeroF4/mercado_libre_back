@@ -6,4 +6,6 @@ When cloning the repository install the dependencies
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
+
+### `npm run test`

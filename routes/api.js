@@ -9,7 +9,7 @@ const {
 
 router.get("/items", validateQueryParam, async function (req, res, next) {
   try {
-    const result = await api.search({ query: req.query.search });
+    const result = await api.search({ query: req.query.q });
     result.author = sign();
     return res.send(result);
   } catch (error) {

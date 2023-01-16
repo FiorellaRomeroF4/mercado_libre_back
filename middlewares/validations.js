@@ -1,6 +1,6 @@
 const validateQueryParam = (req, res, next) => {
-  const { search } = req.query;
-  if (search) {
+  const { q } = req.query;
+  if (q) {
     return next();
   }
   return res.status(400).send({ error: "Bad Request" });
