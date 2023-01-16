@@ -38,7 +38,7 @@ const productDetail = async ({ id }) => {
   result.free_shipping = productData.shipping.free_shipping;
   result.sold_quantity = productData.sold_quantity;
   result.description = descriptionData.plain_text;
-  return result;
+  return { item: result };
 };
 
 module.exports = { search, productDetail };
